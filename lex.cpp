@@ -502,10 +502,11 @@ vector<pair<string,int> > lexical_analyser(string& str, vector<string> &regex_li
 
     // if input string is empty
     if(str.length() == 0){
+        lexemes.push_back(make_pair("",0));
         // check dfa's which accept empty string
         for(int x=0;x<dfa_list.size();x++){
             if(dfa_final_states_list[x].find(1) != dfa_final_states_list[x].end()){
-                lexemes.push_back(make_pair("",x+1));
+                lexemes[0] = make_pair("",x+1);
                 return lexemes;
             }
         }
