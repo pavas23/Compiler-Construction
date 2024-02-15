@@ -1,0 +1,1 @@
+<abababa,3><aba,3><a,3><aab,2><a,3><aaaab,2>
