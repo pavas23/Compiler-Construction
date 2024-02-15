@@ -499,6 +499,18 @@ vector<pair<string,int> > lexical_analyser(string& str, vector<string> &regex_li
     }
 
     vector<pair<string,int> > lexemes;
+
+    // if input string is empty
+    if(str.length() == 0){
+        // check dfa's which accept empty string
+        for(int x=0;x<dfa_list.size();x++){
+            if(dfa_final_states_list[x].find(1) != dfa_final_states_list[x].end()){
+                lexemes.push_back(make_pair("",x+1));
+                return lexemes;
+            }
+        }
+    }
+
     int ind = 0;
     while(ind < str.length()){
         int maxLen = 0;
