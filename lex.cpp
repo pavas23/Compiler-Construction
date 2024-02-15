@@ -541,17 +541,23 @@ int main(){
     int lineNum = 0;
     while(inf){
         inf >> temp;
-        if(lineNum == 0) inputStr = temp;
+        if(lineNum == 0){
+            inputStr = temp;
+            // checking if inputStr is empty
+            bool flag = false;
+            for(auto ch : inputStr){
+                if(ch == '(' || ch == ')'){
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag){
+                regex_list.push_back(temp);
+                inputStr = "";
+            }
+        }
         else regex_list.push_back(temp);
         lineNum++;
-    }
-
-    // checking if inputStr is empty
-    for(auto ch : inputStr){
-        if(ch == '(' || ch == ')'){
-            cout<<"Input string is empty"<<endl;
-            return 0;
-        }
     }
 
     vector<pair<string,int> > ans = lexical_analyser(inputStr,regex_list);
@@ -576,4 +582,3 @@ int main(){
 
     return 0;
 }
-
