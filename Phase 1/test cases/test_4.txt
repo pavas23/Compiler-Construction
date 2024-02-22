@@ -1,0 +1,9 @@
+Test case 4: 
+
+input.txt: 
+abbaabaabbaabbbbaa
+(((((a)*)(b))(((a)*)((b)((a)*))))*)
+(((a)+)((b)|((((b)+)(a))?)))
+
+output.txt: 
+<abbaabaabbaabbb,1><b,0><aa,2>

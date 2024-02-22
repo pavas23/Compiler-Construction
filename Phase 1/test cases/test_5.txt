@@ -1,0 +1,11 @@
+Test case 5: 
+
+input.txt: 
+bbbaabababababbabababab
+(((((a)*)(b))(((a)?)((b)((a)?))))?)
+(((a)+)((b)|((((b)+)(a))?)))
+((((a)(b))*)((a)?))
+(((a)(((a)|(b))*))((b)(a)))
+
+output.txt: 
+<bb,1><b,0><aabababababbabababa,4><b,0>
