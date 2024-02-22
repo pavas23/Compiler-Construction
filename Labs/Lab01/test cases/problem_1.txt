@@ -23,4 +23,3 @@ Input:
 
 Input String:
 1001100-Accepted
-
