@@ -1,0 +1,16 @@
+Test Case : 2
+
+input.txt
+MAT666
+
+output.txt
+@22@12@6@726#
+
+// MAT666 distnict courses and the grade information 
+course		units	grade
+CSF222		3	    B-
+CSF211		4	    A-
+CSF302		2	    A
+PHYF111		3	    B
+MATHF111	4	    A-
+BIOF123		3	    A-

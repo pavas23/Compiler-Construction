@@ -1,0 +1,27 @@
+$RAM123 <CSF111 3 A><CSF211 4 B-> <CSF222 3 C>
+$SAM456 <CSF111 3 A-><CSF211 4 B> <CSF351 3 B> <CSF222 3 CB>
+$RAM123 <MATHF111 4 A->  <CSF363 3 >  <CSF351 3 B> <BIOF123 3 A-> //ignore <CSF363 3 > since grade is missing (comment 1)
+$cat777 <MATHF111 4 >  <CSF363 3 >  <BIOF123 3 A-> //Invalid record "cat777" is not a valid student ID (comment 2)
+$JAM679   <CSF363 3 B><CSF351 3 A-> <BIOF123 3 A->
+$CAT434 <CSF222 3 B> <CSF211 4 C> <CSF302 2 A> <PHYF111 3 A->
+$MAT666 <CSF222 3 B> <CSF211 4 C> <CSF302 2 A> <PHYF111 3>
+$SAM456 <MATHF111 4 A->  <CSF363 3 A->   <BIOF123 3 A-> 
+Hello $BAT111 <CSF222 3 B-> <CSF302 2 A-> <PHYF111 3 B> //ignore Hello before $ (comment 3)
+$JAM679 <CSF222 3 B> <CSF211 4 C> <CSF302 2 A-> <PHYF111 3 B>
+// a comment started at a new line (comment 4)
+$MAT666 <CSF222 3 B-> <CSF211 4 A-> <PHYF111 3 B>
+MAT666 <CSF222 3 B> <CSF211 4 C> <CSF302 2 A> <PHYF111 3> //Inalid record since it is not started with $ (comment 5)
+$VKH22 <CSF351 3 B> <CSF211 4 C> <CSF302 2 A-> <PHYF111 3 B> <CSF222 3 C>
+$BAT111 <MATHF111 4 A-> <CSF111 3 C>
+$CAT434 <MATHF111 4 >  <CSF363 3 >  <BIOF123 3 A-> //ignore <MATHF111 4 > and <CSF363 3 > since grades are missing (comment 6)
+$BAT111   <CSF363 3 A><CSF351 3 B-> <BIOF123 3 A-> <CSF211 4 B-> <CSF222 3 C>
+$JAM679 <MATHF111 4 A> <CSF111 3 B><CSF211 4 B> <CSF222 3 C> //ignore <CSF111 3 B> since course ID is not valid (comment 7)
+$MAT666 <MATHF111 4 A->  <CSF363 3 >  <BIOF123 3 A->
+$RAM123 <CSF222 3 B> <CSF211 4 C> <CSF302 2 A> <PHYF111 3> $BAT111 <CSF302 2 B> <CSF211 4 C> <CSF302 2 A>  //multiple records in a single line (comment 8) 
+$JAM679 //Invalid record since it does not contain any course information (comment 9)
+$MSDH99 <MATHF111 4 A-> <CSF111  A> <CSF211 4 C> <CSF302 2 A> <PHYF111 3 A-> <BIOF123 3 A>
+$BAT111 <MATHF111 4 A->  <CSF363 3 > <PHYF111 3 A-> <BIOF123 3 A-> 
+$DEV123 <MATHF123 B 5> <CSF222 4 A> $PVA34554 <4 B- CAS123> $DEV123 <MATHF123 4 A> // (comment 11)
+//valid records are at lines 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18, 19, 20, 20, 22, 23 (comment 10)
+$DASHU12 <MATHD12 A    
+// 

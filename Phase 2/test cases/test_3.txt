@@ -1,0 +1,15 @@
+Test Case : 3
+
+input.txt
+MSDH99
+
+output.txt
+@22@12@5@713#
+
+// MSDH99 distnict courses and the grade information 
+course		units	grade
+MATHF111	4	    A-
+CSF211		4	    C
+CSF302		2	    A
+PHYF111		3	    A-
+BIOF123		3	    A

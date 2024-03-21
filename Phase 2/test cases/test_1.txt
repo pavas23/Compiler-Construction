@@ -1,0 +1,17 @@
+Test Case : 1
+
+input.txt
+RAM123
+
+output.txt
+@22@12@7@682#
+
+// RAM123 distnict courses and the grade information 
+course		units   grade
+CSF111		3	    A
+CSF211		4	    C
+CSF222		3	    B
+MATHF111	4	    A-
+CSF351		3	    B
+BIOF123		3	    A-
+CSF302		2	    A

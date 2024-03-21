@@ -1,0 +1,9 @@
+Test Case : 4
+
+input.txt
+ANT243
+
+output.txt
+@22@12@0@0#
+
+// no record is there with studID ANT243
