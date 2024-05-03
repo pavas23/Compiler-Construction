@@ -1,0 +1,1 @@
+{program{ArrayAverage}{;{var{:{numbers}{of{array{.{1{[}{.}}{5{]}}}}{Integer{;{:{,{i}{,{sum}{numbers}}}{Integer{;{:{average}{real{;{:{,{b1}{b2}}{Boolean{;}}}}}}}}}}}}}{begin{if{not{<{hello}{3}}}{then{begin{end}}{;}}}{end{.}}}}}}
